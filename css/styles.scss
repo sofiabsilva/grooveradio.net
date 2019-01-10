@@ -1,16 +1,27 @@
 $linkColor: #fecc00;
 $backgroundColor: #3f3185;
 .container-fluid {
-   max-width: 1000px;
+   max-width: 950px;
    margin: auto;
  }
 
  .content {
    background-image: url(https://www.grooveradiopt.com/fotos/IMG_7342.jpg);
-   min-height: 500px;
-   background-attachment: fixed;
+   transform: translateY(-90px);
+   height: 500px;
+   background-attachment: unset;
    max-width: 100%;
    background-size: cover;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   h1 {
+     font-size: 30px;
+     color: #0e0d12;
+     padding: 10px;
+     background: #fdcb00ba;
+     letter-spacing: 9px;
+   }
 }
 .logo {
   max-width: 80px;
@@ -38,6 +49,12 @@ $backgroundColor: #3f3185;
 .navbar-inverse .navbar-nav>li>a {
     color: $linkColor;
   }
+@media (min-width: 1100px) {
+  .content {
+    background-attachment: fixed;
+  }
+}
+
 @media (min-width: 768px) {
   .navbar-nav > li > a {
     /* (80px - line-height of 27px) / 2 = 26.5px */
