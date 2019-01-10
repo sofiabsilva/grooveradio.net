@@ -1,11 +1,51 @@
-nav {
+.container-fluid {
   max-width: 1000px;
   margin: auto;
 }
 
 .content {
-  background-image: url("https://www.grooveradiopt.com/fotos/IMG_5270.jpg");
+  background-image: url(https://www.grooveradiopt.com/fotos/IMG_7342.jpg);
   min-height: 500px;
+  background-attachment: fixed;
+  max-width: 100%;
+  background-size: cover;
+}
+
+.logo {
+  max-width: 80px;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  min-height: 80px;
+  font-size: 18px;
+  background-color: #3f3185;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+  height: 80px;
+  line-height: 80px;
+}
+
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #fecc00;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+    line-height: 27px;
+  }
 }
 
 /*# sourceMappingURL=master.css.map */
