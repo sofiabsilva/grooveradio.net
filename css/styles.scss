@@ -7,7 +7,7 @@ $backgroundColor: #3f3185;
 
  .content {
    // background-image: url(https://www.grooveradiopt.com/fotos/IMG_7342.jpg);
-   background-image: url("../images/cut_IMG_7342.jpg");
+   background-image: url("../images/850_bgimg.jpg");
    height: 55vh;
    background-attachment: unset;
    max-width: 100%;
@@ -64,6 +64,9 @@ $backgroundColor: #3f3185;
     padding-top: 26.5px;
     padding-bottom: 26.5px;
     line-height: 27px;
+  }
+  .content {
+    background-image: url("../images/cut_IMG_7342.jpg");
   }
 }
 
