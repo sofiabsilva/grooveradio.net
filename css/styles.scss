@@ -6,9 +6,9 @@ $backgroundColor: #3f3185;
  }
 
  .content {
-   background-image: url(https://www.grooveradiopt.com/fotos/IMG_7342.jpg);
-   transform: translateY(-90px);
-   height: 500px;
+   // background-image: url(https://www.grooveradiopt.com/fotos/IMG_7342.jpg);
+   background-image: url("../images/cut_IMG_7342.jpg");
+   height: 55vh;
    background-attachment: unset;
    max-width: 100%;
    background-size: cover;
@@ -16,7 +16,7 @@ $backgroundColor: #3f3185;
    align-items: center;
    justify-content: center;
    h1 {
-     font-size: 30px;
+     font-size: 3vw;
      color: #0e0d12;
      padding: 10px;
      background: #fdcb00ba;
@@ -52,6 +52,9 @@ $backgroundColor: #3f3185;
 @media (min-width: 1100px) {
   .content {
     background-attachment: fixed;
+    h1 {
+      font-size: 30px;
+    }
   }
 }
 
@@ -61,5 +64,11 @@ $backgroundColor: #3f3185;
     padding-top: 26.5px;
     padding-bottom: 26.5px;
     line-height: 27px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content h1 {
+    font-size: 20px;
   }
 }
