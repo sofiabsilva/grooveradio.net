@@ -1,3 +1,7 @@
+body {
+  background: #1a1a1a;
+}
+
 .content {
   background-image: url("../images/850_bgimg.jpg");
   height: 55vh;
@@ -36,8 +40,25 @@
   color: #fff;
 }
 
+.currentSection {
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+}
+
 .container {
-  height: 1000px;
+  transform: translateY(90px);
+  padding-top: 16px;
+  margin: 0 auto;
+  padding: 16px 10vw;
+  max-width: 100%;
+}
+.container h2 {
+  color: white;
+  letter-spacing: 4px;
+  text-transform: lowercase;
+  font-size: 2vw;
+  font-weight: normal;
 }
 
 @media (min-width: 1100px) {
@@ -50,7 +71,7 @@
 }
 @media (min-width: 768px) {
   .navbar {
-    padding: 0 80px;
+    padding: 0 10vw;
   }
 
   .content {
@@ -65,6 +86,15 @@
 
   .content h1 {
     font-size: 20px;
+  }
+
+  .container h2 {
+    font-size: 16px;
+  }
+
+  .player {
+    width: 100px;
+    height: 100px;
   }
 
   .navbar {
