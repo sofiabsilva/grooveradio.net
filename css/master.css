@@ -88,6 +88,10 @@ body {
     font-size: 20px;
   }
 
+  .container {
+    padding: 16px 15px;
+  }
+
   .container h2 {
     font-size: 16px;
   }
