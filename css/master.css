@@ -12,6 +12,7 @@
   font-size: 3vw;
   color: #0e0d12;
   padding: 10px;
+  background: #fecc00;
   background: #fdcb00ba;
   letter-spacing: 9px;
 }
@@ -29,6 +30,10 @@
 
 .navbar-dark .navbar-nav .nav-link {
   color: #fecc00;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
 }
 
 .container {
