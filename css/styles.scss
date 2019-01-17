@@ -4,6 +4,7 @@ $background: #1a1a1a;
 
 body {
   background: $background;
+  color: white;
 }
  .content {
    // background-image: url(https://www.grooveradiopt.com/fotos/IMG_7342.jpg);
@@ -44,7 +45,7 @@ body {
   color: #fff;
 }
 .currentSection {
-  display: flex;
+  display: none;
   flex-direction:column;
   padding: 6px;
 }
@@ -63,6 +64,33 @@ body {
     font-size: 2vw;
     font-weight: normal;
   }
+}
+
+/* player info */
+.playerSection {
+  display: flex;
+  min-width: 260px;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 6px;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    font-size: 14px;
+    padding: 3px;
+  }
+}
+
+.artist {
+  font-weight: bold;
+}
+#cover {
+  max-width: 70px;
+}
+#currentSong {
+  display: flex;
+  align-items: center;
 }
 
 // Responsive styling
