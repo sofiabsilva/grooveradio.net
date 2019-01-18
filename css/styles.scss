@@ -67,6 +67,7 @@ body {
   margin: 0 auto;
   padding: 16px 10vw;
   max-width: 100%;
+  font-size: 14px;
 }
 
 
@@ -85,7 +86,6 @@ body {
   ul {
     list-style-type: none;
     margin: 0;
-    font-size: 14px;
     padding: 10px;
   }
 }
@@ -126,7 +126,6 @@ body {
   }
 }
 
-
 #airedList {
   li {
       display: flex;
@@ -143,7 +142,7 @@ body {
   .player {
     width: 120px;
   }
-  .playerSection ul {
+  .container {
     font-size: 13px;
   }
 }
@@ -177,12 +176,10 @@ body {
   .container {
     padding: 16px 15px;
     transform: translateY(50px);
+    font-size: 12px;
   }
   .container h2 {
     font-size: 17px;
-  }
-  .playerSection ul {
-    font-size: 12px;
   }
   .player {
     width: 100px;
