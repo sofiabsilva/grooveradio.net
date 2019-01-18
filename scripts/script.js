@@ -1,6 +1,9 @@
 const player = document.querySelector('.player')
 const currentSection = document.querySelector('.currentSection')
+const recentSongs = document.querySelector('#recentSongs')
 player.addEventListener('click', toggleAudio)
+
+const interval = 4000;
 
 window.onload = currentSongs;
 
@@ -35,8 +38,8 @@ function currentSongs () {
   player.style.visibility = "visible"
 }
 
-// Update song info every 4 seconds
-setInterval(currentSongs, 4000)
+// // Update song info every 4 seconds
+// setInterval(currentSongs, interval)
 
 function toggleAudio () {
   if (player.getAttribute('src') === "images/Groove_Play_128.png") {
@@ -48,3 +51,35 @@ function toggleAudio () {
     player.src = "images/Groove_Play_128.png"
   }
 }
+
+
+function displayLastSongs() {
+  let content
+  let loader = document.querySelector('.loading')
+  $.getJSON('https://europa.shoutca.st/recentfeed/atsueste/json/', function (data) {
+    content = `<ul id ='airedList'>`
+    let lastFive = Object.entries(data.items).slice(1, 6)
+    for (let i = 0; i < lastFive.length; i++) {
+      content += `<li>
+      <img class='albumCover' src="${lastFive[i][1]['enclosure']['url']}" alt="${lastFive[i][1]['description']}">
+      ${lastFive[i][1]['title']}</li>`
+    }
+    content += `</ul>`
+    recentSongs.innerHTML = content
+  })
+};
+
+
+let switchInterval;
+function intervalHandler() {
+  switchInterval = setInterval(function() {
+    if (document.visibilityState === "visible") {
+      displayLastSongs();
+      currentSongs();
+    } else {
+      return;
+    }
+  }, interval);
+}
+
+intervalHandler();

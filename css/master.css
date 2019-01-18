@@ -1,4 +1,4 @@
-.lastSongsSection, .currentSection {
+#recentSongs, .lastSongsSection, .currentSection {
   flex-direction: column;
   padding: 6px;
 }
@@ -96,13 +96,30 @@ body {
 }
 
 .player {
-  align-self: center;
+  align-self: start;
   visibility: hidden;
   padding: 5px;
 }
 
 .lastSongsSection h2 {
   text-align: center;
+}
+
+#recentSongs {
+  display: flex;
+}
+#recentSongs .loading {
+  align-self: center;
+  padding: 15px;
+}
+
+#airedList li {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+}
+#airedList li img {
+  padding-right: 4px;
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {

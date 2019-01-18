@@ -103,7 +103,7 @@ body {
 }
 
 .player {
-  align-self: center;
+  align-self: start;
   visibility: hidden;
   padding: 5px;
 }
@@ -116,8 +116,29 @@ body {
   }
 }
 
-// Responsive styling
+// Last songs aired section
+#recentSongs {
+  display: flex;
+  @extend %sections;
+  .loading {
+    align-self: center;
+    padding: 15px;
+  }
+}
 
+
+#airedList {
+  li {
+      display: flex;
+      align-items: center;
+      padding: 4px 0;
+      img {
+        padding-right: 4px;
+      }
+    }
+  }
+
+// Responsive styling
 @media(min-width: 768px) and (max-width: 1000px) {
   .player {
     width: 120px;
