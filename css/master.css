@@ -1,3 +1,16 @@
+.lastSongsSection, .currentSection {
+  flex-direction: column;
+  padding: 6px;
+}
+
+.lastSongsSection h2, .playerSection h2 {
+  color: white;
+  letter-spacing: 4px;
+  text-transform: lowercase;
+  font-size: 2vw;
+  font-weight: normal;
+}
+
 body {
   background: #1a1a1a;
   color: white;
@@ -42,9 +55,7 @@ body {
 }
 
 .currentSection {
-  display: none;
-  flex-direction: column;
-  padding: 6px;
+  display: flex;
 }
 
 .container {
@@ -54,27 +65,20 @@ body {
   padding: 16px 10vw;
   max-width: 100%;
 }
-.container h2 {
-  color: white;
-  letter-spacing: 4px;
-  text-transform: lowercase;
-  font-size: 2vw;
-  font-weight: normal;
-}
 
 /* player info */
 .playerSection {
+  visibility: hidden;
   display: flex;
   min-width: 260px;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
   padding-left: 6px;
 }
 .playerSection ul {
   list-style-type: none;
   margin: 0;
   font-size: 14px;
-  padding: 3px;
+  padding: 10px;
 }
 
 .artist {
@@ -88,8 +92,28 @@ body {
 #currentSong {
   display: flex;
   align-items: center;
+  padding: 10px 0;
 }
 
+.player {
+  align-self: center;
+  visibility: hidden;
+  padding: 5px;
+}
+
+.lastSongsSection h2 {
+  text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .player {
+    width: 120px;
+  }
+
+  .playerSection ul {
+    font-size: 13px;
+  }
+}
 @media (min-width: 1100px) {
   .content {
     background-attachment: fixed;
@@ -98,7 +122,7 @@ body {
     font-size: 30px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 870px) {
   .navbar {
     padding: 0 10vw;
   }
@@ -108,9 +132,9 @@ body {
     transform: translateY(90px);
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 869px) {
   .content {
-    transform: translateY(90px);
+    transform: translateY(50px);
   }
 
   .content h1 {
@@ -119,19 +143,27 @@ body {
 
   .container {
     padding: 16px 15px;
+    transform: translateY(50px);
   }
 
   .container h2 {
-    font-size: 16px;
+    font-size: 17px;
+  }
+
+  .playerSection ul {
+    font-size: 12px;
   }
 
   .player {
     width: 100px;
-    height: 100px;
   }
 
   .navbar {
     font-size: 14px;
+  }
+
+  .logo {
+    max-width: 60px;
   }
 }
 

@@ -21,7 +21,8 @@ function currentSongs () {
   const songInfo = document.querySelector('#currentSong')
   let content
   if (typeof (content) === 'undefined') {
-    currentSection.style.display="none"
+    currentSection.style.visibility = "hidden"
+    player.style.visibility= "hidden"
   }
   $.getJSON('https://europa.shoutca.st/rpc/atsueste/streaminfo.get', function (data) {
     content = `<img id="cover" src=${data.data[0]['track']['imageurl']} alt="album cover"><ul>
@@ -30,7 +31,8 @@ function currentSongs () {
     </ul>`
     songInfo.innerHTML = content
   })
-  currentSection.style.display="flex"
+  currentSection.style.visibility = "visible"
+  player.style.visibility = "visible"
 }
 
 // Update song info every 4 seconds
