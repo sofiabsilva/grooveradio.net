@@ -141,6 +141,7 @@ h2 {
       }
     }
   }
+
 // apps section
 .appsTitle {
   background-image: url("../images/IMG_7785.jpg");
@@ -148,6 +149,21 @@ h2 {
    display: flex;
    align-items: center;
    justify-content: center;
+}
+
+.moreSection {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  button {
+    align-self: center;
+  }
+}
+#more {
+  padding: 20px;
+  a {
+    padding: 30px;
+  }
 }
 
 // Responsive styling

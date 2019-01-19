@@ -143,6 +143,22 @@ h1 {
   justify-content: center;
 }
 
+.moreSection {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.moreSection button {
+  align-self: center;
+}
+
+#more {
+  padding: 20px;
+}
+#more a {
+  padding: 30px;
+}
+
 @media (min-width: 768px) and (max-width: 1000px) {
   .player {
     width: 120px;
