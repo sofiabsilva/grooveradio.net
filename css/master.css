@@ -1,3 +1,7 @@
+.second, .first {
+  padding: 40px 10vw;
+}
+
 .appsTitle, .content {
   height: 55vh;
   max-width: 100%;
@@ -64,14 +68,13 @@ h1 {
 
 .container {
   transform: translateY(90px);
-  padding: 20px 0 0;
   margin: 0 auto;
   max-width: 100%;
   font-size: 14px;
+  padding: 0;
 }
 
 .first {
-  padding: 16px 10vw;
   min-height: 60vh;
 }
 
@@ -147,16 +150,40 @@ h1 {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  padding-bottom: 20px;
 }
 .moreSection button {
   align-self: center;
 }
 
+a {
+  color: #fecc00;
+  transition: color 0.3s;
+  transition: opacity 0.3s;
+}
+
+a:hover {
+  color: white;
+  opacity: 0.7;
+}
+
 #more {
   padding: 20px;
 }
-#more a {
-  padding: 30px;
+
+.second {
+  padding-bottom: 0;
+  max-width: 1000px;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.second .col {
+  text-align: center;
+  min-width: 150px;
+}
+
+.btn-secondary {
+  background-color: #3f3185;
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {

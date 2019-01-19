@@ -1,6 +1,10 @@
 $linkColor: #fecc00;
 $navColor: #3f3185;
 $background: #1a1a1a;
+
+%sectionsPadding {
+  padding: 40px 10vw;
+}
 %bgImages {
   height: 55vh;
   max-width: 100%;
@@ -65,13 +69,13 @@ h1 {
 
 .container {
   transform: translateY(90px);
-  padding: 20px 0 0;
   margin: 0 auto;
   max-width: 100%;
   font-size: 14px;
+  padding: 0;
 }
 .first {
-  padding: 16px 10vw;
+  @extend %sectionsPadding;
   min-height: 60vh;
 }
 /* player info */
@@ -155,17 +159,40 @@ h2 {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  padding-bottom: 20px;
   button {
     align-self: center;
   }
 }
-#more {
-  padding: 20px;
-  a {
-    padding: 30px;
-  }
+a {
+  color: $linkColor;
+  transition: color 0.3s;
+  transition: opacity 0.3s;
 }
 
+a:hover {
+  color: white;
+  opacity: 0.7;
+}
+
+#more {
+  padding: 20px;
+}
+
+.second {
+  @extend %sectionsPadding;
+  padding-bottom: 0;
+  max-width: 1000px;
+  flex-wrap: wrap;
+  margin: auto;
+  .col {
+    text-align: center;
+    min-width: 150px;
+  }
+}
+.btn-secondary {
+  background-color: $navColor;
+}
 // Responsive styling
 @media(min-width: 768px) and (max-width: 1000px) {
   .player {
