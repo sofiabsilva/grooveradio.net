@@ -25,10 +25,10 @@ function currentSongs () {
   let content
   if (typeof (content) === 'undefined') {
     currentSection.style.visibility = "hidden"
-    player.style.visibility= "hidden"
+    player.style.visibility = "hidden"
   }
   $.getJSON('https://europa.shoutca.st/rpc/atsueste/streaminfo.get', function (data) {
-    content = `<img id="cover" src=${data.data[0]['track']['imageurl']} alt="album cover"><ul>
+    content = `<img class="albumCover" src=${data.data[0]['track']['imageurl']} alt="album cover"><ul>
     <li class="artist">${data.data[0]['track']['artist']}</li>
     <li class="songTitle">${data.data[0]['track']['title']}</li>
     </ul>`

@@ -1,6 +1,12 @@
 $linkColor: #fecc00;
 $navColor: #3f3185;
 $background: #1a1a1a;
+%bgImages {
+  height: 55vh;
+  max-width: 100%;
+  background-size: cover;
+  background-attachment: unset;
+}
 %sections {
   flex-direction:column;
   padding: 6px;
@@ -21,22 +27,18 @@ body {
  .content {
    // background-image: url(https://www.grooveradiopt.com/fotos/IMG_7342.jpg);
    background-image: url("../images/850_bgimg.jpg");
-   height: 55vh;
-   background-attachment: unset;
-   max-width: 100%;
-   background-size: cover;
+   @extend %bgImages;
    display: flex;
    align-items: center;
    justify-content: center;
-
-   h1 {
-     font-size: 3vw;
-     color: #0e0d12;
-     padding: 10px;
-     background: $linkColor; // in case tranparency isn't possible
-     background: #fdcb00ba;
-     letter-spacing: 9px;
-   }
+}
+h1 {
+  font-size: 3vw;
+  color: #0e0d12;
+  padding: 10px;
+  background: $linkColor; // in case tranparency isn't possible
+  background: #fdcb00ba;
+  letter-spacing: 9px;
 }
 
 .logo {
@@ -63,14 +65,15 @@ body {
 
 .container {
   transform: translateY(90px);
-  padding-top: 16px;
+  padding: 20px 0 0;
   margin: 0 auto;
-  padding: 16px 10vw;
   max-width: 100%;
   font-size: 14px;
 }
-
-
+.first {
+  padding: 16px 10vw;
+  min-height: 60vh;
+}
 /* player info */
 .playerSection {
   visibility: hidden;
@@ -78,10 +81,7 @@ body {
   min-width: 260px;
   justify-content: space-evenly;
   padding-left: 6px;
-
-  h2 {
-    @extend %titles;
-  }
+  padding-bottom: 20px;
 
   ul {
     list-style-type: none;
@@ -89,13 +89,16 @@ body {
     padding: 10px;
   }
 }
-
+h2 {
+  @extend %titles;
+}
 .artist {
   font-weight: bold;
 }
-#cover {
-  max-width: 70px;
+.albumCover {
+  max-width: 60px;
 }
+
 #currentSong {
   display: flex;
   align-items: center;
@@ -106,13 +109,14 @@ body {
   align-self: start;
   visibility: hidden;
   padding: 5px;
+  cursor: pointer;
 }
 
 .lastSongsSection {
   @extend %sections;
   h2 {
-    @extend %titles;
-    text-align: center;
+    text-align: left;
+    padding-left: 7px;
   }
 }
 
@@ -121,12 +125,13 @@ body {
   display: flex;
   @extend %sections;
   .loading {
-    align-self: center;
-    padding: 15px;
+    align-self: start;
+    padding-left: 20px;
   }
 }
 
 #airedList {
+  padding-left: 0;
   li {
       display: flex;
       align-items: center;
@@ -136,6 +141,14 @@ body {
       }
     }
   }
+// apps section
+.appsTitle {
+  background-image: url("../images/IMG_7785.jpg");
+   @extend %bgImages;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
 
 // Responsive styling
 @media(min-width: 768px) and (max-width: 1000px) {
@@ -150,9 +163,9 @@ body {
 @media (min-width: 1100px) {
   .content {
     background-attachment: fixed;
-    h1 {
-      font-size: 30px;
-    }
+  }
+  h1 {
+    font-size: 30px;
   }
 }
 
@@ -170,15 +183,14 @@ body {
   .content {
     transform: translateY(50px);
   }
-  .content h1 {
+  h1 {
     font-size: 20px;
   }
   .container {
-    padding: 16px 15px;
     transform: translateY(50px);
     font-size: 12px;
   }
-  .container h2 {
+  h2 {
     font-size: 17px;
   }
   .player {
@@ -189,5 +201,12 @@ body {
   }
   .logo {
     max-width: 60px;
+  }
+}
+@media (min-width: 576px) {
+  #recentSongs {
+    .loading {
+
+    }
   }
 }

@@ -1,9 +1,16 @@
+.appsTitle, .content {
+  height: 55vh;
+  max-width: 100%;
+  background-size: cover;
+  background-attachment: unset;
+}
+
 #recentSongs, .lastSongsSection, .currentSection {
   flex-direction: column;
   padding: 6px;
 }
 
-.lastSongsSection h2, .playerSection h2 {
+h2 {
   color: white;
   letter-spacing: 4px;
   text-transform: lowercase;
@@ -18,15 +25,12 @@ body {
 
 .content {
   background-image: url("../images/850_bgimg.jpg");
-  height: 55vh;
-  background-attachment: unset;
-  max-width: 100%;
-  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.content h1 {
+
+h1 {
   font-size: 3vw;
   color: #0e0d12;
   padding: 10px;
@@ -60,11 +64,15 @@ body {
 
 .container {
   transform: translateY(90px);
-  padding-top: 16px;
+  padding: 20px 0 0;
   margin: 0 auto;
-  padding: 16px 10vw;
   max-width: 100%;
   font-size: 14px;
+}
+
+.first {
+  padding: 16px 10vw;
+  min-height: 60vh;
 }
 
 /* player info */
@@ -74,6 +82,7 @@ body {
   min-width: 260px;
   justify-content: space-evenly;
   padding-left: 6px;
+  padding-bottom: 20px;
 }
 .playerSection ul {
   list-style-type: none;
@@ -85,8 +94,8 @@ body {
   font-weight: bold;
 }
 
-#cover {
-  max-width: 70px;
+.albumCover {
+  max-width: 60px;
 }
 
 #currentSong {
@@ -99,20 +108,25 @@ body {
   align-self: start;
   visibility: hidden;
   padding: 5px;
+  cursor: pointer;
 }
 
 .lastSongsSection h2 {
-  text-align: center;
+  text-align: left;
+  padding-left: 7px;
 }
 
 #recentSongs {
   display: flex;
 }
 #recentSongs .loading {
-  align-self: center;
-  padding: 15px;
+  align-self: start;
+  padding-left: 20px;
 }
 
+#airedList {
+  padding-left: 0;
+}
 #airedList li {
   display: flex;
   align-items: center;
@@ -120,6 +134,13 @@ body {
 }
 #airedList li img {
   padding-right: 4px;
+}
+
+.appsTitle {
+  background-image: url("../images/IMG_7785.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
@@ -135,7 +156,8 @@ body {
   .content {
     background-attachment: fixed;
   }
-  .content h1 {
+
+  h1 {
     font-size: 30px;
   }
 }
@@ -154,17 +176,16 @@ body {
     transform: translateY(50px);
   }
 
-  .content h1 {
+  h1 {
     font-size: 20px;
   }
 
   .container {
-    padding: 16px 15px;
     transform: translateY(50px);
     font-size: 12px;
   }
 
-  .container h2 {
+  h2 {
     font-size: 17px;
   }
 
