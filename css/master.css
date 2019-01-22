@@ -142,10 +142,10 @@ h1 {
 
 .appsTitle {
   background-image: url("../images/IMG_7785.jpg");
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-position: center;
 }
 
 .moreSection {
@@ -198,6 +198,10 @@ a:hover {
   }
 }
 @media (min-width: 1100px) {
+  .appsTitle {
+    background-attachment: fixed;
+  }
+
   .content {
     background-attachment: fixed;
   }

@@ -9,7 +9,7 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
       <link rel="stylesheet" href="css/master.css">
   </head>
-  <body data-spy="scroll" id="begin" >
+  <body data-spy="scroll" >
   <nav class="navbar navbar-dark navbar-expand-md fixed-top">
     <a class="navbar-brand" href="#">
       <img class="logo" alt="Groove Radio PT" src="images/grooveradio128.png">
@@ -19,7 +19,7 @@
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
       <ul class="navbar-nav mt-lg-0 nav-right">
-        <li><a href="#begin" class="px-2 nav-item nav-link"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#begin" class="px-2 nav-item nav-link"><i class="fas fa-play"></i></i> Player</a></li>
         <li><a href="#apps" class="px-2 nav-item nav-link"><i class="fas fa-headphones"></i> Apps</a></li>
         <li><a href="#" class="px-2 nav-item nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
         <li><a href="#" class="px-2 nav-item nav-link"><i class="fas fa-music"></i> About</a></li>
@@ -27,13 +27,13 @@
       </ul>
     </div>
   </nav>
-  <div class="content">
+  <div class="content" id="begin">
     <h1>Music Without Frontiers</h1>
   </div>
   <div class="container"  >
     <div class="first row no-gutters justify-content-center" id="player">
       <div class="playerSection col-sm d-flex">
-        <img class="player" title="Play/Stop" src="images/Groove_Play_128.png" alt="Player">
+        <img class="player" src="images/Groove_Play_128.png" alt="Player">
         <div class="currentSection">
           <h2 class="subtitle current">Now Playing</h2>
           <div id="currentSong">
@@ -47,10 +47,10 @@
         </div>
       </div>
     </div>
-    <div class="appsTitle" >
+    <div class="appsTitle" id="apps">
       <h1>Listen Everywhere</h1>
     </div>
-    <div  class="second row no-gutters " id="apps">
+    <div  class="second row no-gutters">
       <div class="col">
         <a href="https://www.grooveradiopt.com/grooveradiopt.pls">  <img src="https://grooveradiopt.com/apps/vlcplayer.png" style="width:50px" onclick="onClick(this)" class="appLinks" alt="VLC Media Player">
       <p>MP3 VLC Player</p></a>
@@ -87,12 +87,12 @@
     <div class="moreSection d-flex">
       <button type="button" class="btn btn-secondary btn-sm" name="Other Apps" data-toggle="collapse" data-target="#more" aria-expanded="false" aria-controls="more">More Apps</button>
       <div class="collapse" id="more">
-        <a href="https://www.grooveradiopt.com/grooveradiopt.qtl"><img src="https://grooveradiopt.com/apps/quicktimealt.png" style="width:50px" class="appLinks" alt="QuickTime"><p>QuickTime Player</p></a>
-        <a href="https://streema.com/radios/Groove_Radio_PT_2" target="_blank"><img src="images/streema.png" style="width:50px"  class="appLinks" alt="Streema"><p>Streema</p></a>
-        <a href="http://groovept.radio.net/" target="_blank"><img src="images/radio.net-logo.png" style="width:50px" class="appLinks" alt="Radio.Net"><p>Radio.Net</p></a>
-        <a href="https://laradiofm.com/Station-508" target="_blank"><img src="images/laradiofm_fb.png" style="width:50px" class="appLinks" alt="La Radio FM"><p>La Radio FM</p></a>
-        <a href="https://www.internet-radio.com/station/grooveradiopt/" target="_blank" class="appLinks">Internet Radio</a>
-      </div>
+      <a href="https://www.grooveradiopt.com/grooveradiopt.qtl"><img src="https://grooveradiopt.com/apps/quicktimealt.png" style="width:50px" class="appLinks" alt="QuickTime"><p>QuickTime Player</p></a>
+      <a href="https://streema.com/radios/Groove_Radio_PT_2" target="_blank"><img src="images/streema.png" style="width:50px"  class="appLinks" alt="Streema"><p>Streema</p></a>
+      <a href="http://groovept.radio.net/" target="_blank"><img src="images/radio.net-logo.png" style="width:50px" class="appLinks" alt="Radio.Net"><p>Radio.Net</p></a>
+      <a href="https://laradiofm.com/Station-508" target="_blank"><img src="images/laradiofm_fb.png" style="width:50px" class="appLinks" alt="La Radio FM"><p>La Radio FM</p></a>
+      <a href="https://www.internet-radio.com/station/grooveradiopt/" target="_blank" class="appLinks">Internet Radio</a>
+    </div>
   </div>
 </div>
 </div>
