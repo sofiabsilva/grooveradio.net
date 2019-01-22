@@ -27,6 +27,7 @@ $background: #1a1a1a;
 body {
   background: $background;
   color: white;
+  position: relative;
 }
  .content {
    // background-image: url(https://www.grooveradiopt.com/fotos/IMG_7342.jpg);
@@ -148,11 +149,12 @@ h2 {
 
 // apps section
 .appsTitle {
-  background-image: url("../images/IMG_7785.jpg");
+   background-image: url("../images/IMG_7785.jpg");
    @extend %bgImages;
    display: flex;
    align-items: center;
    justify-content: center;
+   background-position: center;
 }
 
 .moreSection {
