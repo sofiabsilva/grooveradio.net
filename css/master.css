@@ -1,8 +1,8 @@
-.second, .first {
+.contactSection, .second, .first {
   padding: 40px 10vw;
 }
 
-.appsTitle, .content {
+.contactTitle, .aboutTitle, .appsTitle, .content {
   height: 55vh;
   max-width: 100%;
   background-size: cover;
@@ -152,7 +152,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 .moreSection button {
   align-self: center;
@@ -161,11 +161,17 @@ h1 {
 a {
   color: #fecc00;
   transition: color 0.3s;
-  transition: opacity 0.3s;
 }
 
 a:hover {
   color: white;
+}
+
+a img {
+  transition: opacity 0.3s;
+}
+
+a img:hover {
   opacity: 0.7;
 }
 
@@ -188,6 +194,34 @@ a:hover {
   background-color: #3f3185;
 }
 
+.aboutTitle {
+  background-image: url(../images/IMG_8542.jpg);
+}
+
+.contactTitle {
+  background-image: url(https://www.grooveradiopt.com/fotos/IMG_5270.jpg);
+  display: flex;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactSection {
+  font-size: 1.5vw;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.contactSection h2 {
+  padding: 15px;
+}
+
+.socialmedia {
+  font-size: 18px;
+  padding: 20px;
+}
+
 @media (min-width: 768px) and (max-width: 1000px) {
   .player {
     width: 120px;
@@ -198,11 +232,7 @@ a:hover {
   }
 }
 @media (min-width: 1100px) {
-  .appsTitle {
-    background-attachment: fixed;
-  }
-
-  .content {
+  .appsTitle, .contactTitle, .content {
     background-attachment: fixed;
   }
 
@@ -248,6 +278,13 @@ a:hover {
 
   .logo {
     max-width: 60px;
+  }
+
+  .contactSection {
+    font-size: 14px;
+  }
+  .contactSection a {
+    font-size: 15px;
   }
 }
 

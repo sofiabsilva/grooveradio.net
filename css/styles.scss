@@ -161,7 +161,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   button {
     align-self: center;
   }
@@ -169,11 +169,15 @@ h2 {
 a {
   color: $linkColor;
   transition: color 0.3s;
+}
+a:hover {
+  color: white;
+}
+a img {
   transition: opacity 0.3s;
 }
 
-a:hover {
-  color: white;
+a img:hover {
   opacity: 0.7;
 }
 
@@ -195,6 +199,38 @@ a:hover {
 .btn-secondary {
   background-color: $navColor;
 }
+
+// About section
+.aboutTitle {
+  background-image: url(../images/IMG_8542.jpg);
+  @extend %bgImages;
+}
+
+// Contact section
+.contactTitle {
+  background-image: url(https://www.grooveradiopt.com/fotos/IMG_5270.jpg);
+  @extend %bgImages;
+  display: flex;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+}
+.contactSection {
+  font-size: 1.5vw;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 20px;
+  @extend %sectionsPadding;
+  h2 {
+    padding: 15px;
+  }
+}
+.socialmedia {
+  font-size: 18px;
+  padding: 20px;
+}
+
 // Responsive styling
 @media(min-width: 768px) and (max-width: 1000px) {
   .player {
@@ -206,10 +242,7 @@ a:hover {
 }
 
 @media (min-width: 1100px) {
-  .appsTitle {
-    background-attachment: fixed;
-  }
-  .content {
+  .appsTitle, .contactTitle, .content{
     background-attachment: fixed;
   }
   h1 {
@@ -249,6 +282,12 @@ a:hover {
   }
   .logo {
     max-width: 60px;
+  }
+  .contactSection {
+    font-size: 14px;
+    a {
+      font-size: 15px;
+    }
   }
 }
 @media (min-width: 576px) {
