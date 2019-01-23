@@ -204,6 +204,24 @@ a img:hover {
 .aboutTitle {
   background-image: url(../images/IMG_8542.jpg);
   @extend %bgImages;
+  display: flex;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+}
+.aboutSection {
+  padding: 40px;
+  font-size: 16px;
+  text-align: center;
+  max-width: 970px;
+  margin: auto;
+  p {
+    padding-top: 10px;
+  }
+  img {
+    width: 360px;
+    max-width: 70%;
+  }
 }
 
 // Contact section
@@ -282,7 +300,7 @@ a img:hover {
   .logo {
     max-width: 60px;
   }
-  .contactSection {
+  .contactSection, .aboutSection {
     font-size: 14px;
     a {
       font-size: 15px;
