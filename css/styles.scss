@@ -244,10 +244,32 @@ a img:hover {
   }
 }
 .socialmedia {
-  font-size: 18px;
+  font-size: 20px;
   padding: 20px;
 }
 
+// footer
+footer {
+  transform: translateY(90px);
+  text-align: center;
+  background-color: $navColor;
+  padding-top: 15px;
+  border-top: solid 1px #000;
+  a {
+    font-size: 25px;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  p {
+    font-size: 13px;
+    padding: 10px;
+    margin:0;
+  }
+}
+.hiddenDescription {
+  display: none;
+}
 // Responsive styling
 @media(min-width: 768px) and (max-width: 1000px) {
   .player {
@@ -299,6 +321,9 @@ a img:hover {
   }
   .logo {
     max-width: 60px;
+  }
+  .contactSection {
+    padding-bottom: 0;
   }
   .contactSection, .aboutSection {
     font-size: 14px;

@@ -236,8 +236,31 @@ a img:hover {
 }
 
 .socialmedia {
-  font-size: 18px;
+  font-size: 20px;
   padding: 20px;
+}
+
+footer {
+  transform: translateY(90px);
+  text-align: center;
+  background-color: #3f3185;
+  padding-top: 15px;
+  border-top: solid 1px #000;
+}
+footer a {
+  font-size: 25px;
+}
+footer a:hover {
+  text-decoration: none;
+}
+footer p {
+  font-size: 13px;
+  padding: 10px;
+  margin: 0;
+}
+
+.hiddenDescription {
+  display: none;
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
@@ -296,6 +319,10 @@ a img:hover {
 
   .logo {
     max-width: 60px;
+  }
+
+  .contactSection {
+    padding-bottom: 0;
   }
 
   .contactSection, .aboutSection {
