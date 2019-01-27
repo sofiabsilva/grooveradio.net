@@ -19,7 +19,7 @@
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
       <ul class="navbar-nav mt-lg-0 nav-right">
-        <li><a href="#begin" class="px-2 nav-item nav-link"><i class="fas fa-play"></i></i> Player</a></li>
+        <li><a href="#begin" class="px-2 nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse"><i class="fas fa-play"></i></i> Player</a></li>
         <li><a href="#about" class="px-2 nav-item nav-link"><i class="fas fa-music"></i> About</a></li>
         <li><a href="#apps" class="px-2 nav-item nav-link"><i class="fas fa-headphones"></i> Apps</a></li>
         <li><a href="#contact" class="px-2 nav-item nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
@@ -33,7 +33,7 @@
   <div class="container">
     <div class="first row no-gutters justify-content-center" id="player">
       <div class="playerSection col-sm d-flex">
-        <img class="player" title="Play/Stop" src="images/Groove_Play_128.png" alt="Radio player, click to play or stop">
+        <button class="playerButton" name="button" type="button" autofocus><img class="player" title="Play/Stop" src="images/Groove_Play_128.png" alt="Radio player, click to play or stop"></button>
         <div class="currentSection">
           <h2 class="subtitle current">Now Playing</h2>
           <div id="currentSong">
@@ -64,8 +64,8 @@
       </script>
       <h2>Free Online Radio</h2>
       <p>Listen to a great selection of non-stop World Music from it's roots to the global modern music, afrobeat, funk, reggae, jazz, latin. Lots of rhythms and beats, in the diversity of the different cultures and "tribes" of the planet, a sonic fusion with a lot of GROOVE.</p>
-      <p>You can follow the news of the moment, of worldmusic international, in our <a href="https://grooveradiopt.com/">original website</a> in Portuguese.</p>
       <a href="https://grooveradiopt.com/"><img src="images\sitio_grooveradiopt.png" alt="GrooveRadioPT website link"></a>
+      <p>You can follow the news of the moment, of worldmusic international, in our <a href="https://grooveradiopt.com/">original website</a> in Portuguese.</p>
     </div>
 
     <div class="appsTitle" id="apps">
@@ -138,9 +138,9 @@
          data-ad-slot="9759029627"
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
-    <!-- <script>
+    <script>
     (adsbygoogle = window.adsbygoogle || []).push({});
-    </script> -->
+    </script>
   </div>
 </div>
 <footer>

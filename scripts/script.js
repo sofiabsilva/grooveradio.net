@@ -11,7 +11,8 @@ let audio = new Audio();
 
 function playAudio () {
   audio.src = 'http://europa.shoutca.st:8648/;/;stream.mp3'
-  audio.play()
+  audio.play();
+  console.log('playing');
 }
 
 function stopAudio () {
@@ -38,8 +39,6 @@ function currentSongs () {
   player.style.visibility = "visible"
 }
 
-// // Update song info every 4 seconds
-// setInterval(currentSongs, interval)
 
 function toggleAudio () {
   if (player.getAttribute('src') === "images/Groove_Play_128.png") {
@@ -69,7 +68,8 @@ function displayLastSongs() {
   })
 };
 
-
+// // Update song info every 4 seconds
+// setInterval(currentSongs, interval)
 let switchInterval;
 function intervalHandler() {
   switchInterval = setInterval(function() {

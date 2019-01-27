@@ -109,8 +109,11 @@ h2 {
   padding: 10px 0;
 }
 
-.player {
+.playerButton {
   align-self: start;
+}
+.player {
+
   visibility: hidden;
   padding: 5px;
   cursor: pointer;
@@ -221,14 +224,15 @@ a img:hover {
     padding-top: 10px;
   }
   img {
-    width: 340px;
-    max-width: 70%;
+    width: 600px;
+    max-width: 90%;
+    padding: 30px;
   }
 }
 
 // Contact section
 .contactTitle {
-  background-image: url(../images/IMG_4049.jpg);
+  background-image: url("../images/850_IMG_4049.jpg");
   @extend %bgImages;
   display: flex;
   background-position: center;
@@ -266,6 +270,7 @@ footer {
   p {
     font-size: 14px;
     padding: 10px;
+    padding-top: 4px;
     margin:0;
   }
 }
@@ -299,9 +304,15 @@ footer {
     background-image: url("../images/cut_IMG_7342.jpg");
     transform: translateY(90px);
   }
+  .contactTitle {
+    background-image: url("../images/IMG_4049.jpg");
+  }
 }
 
 @media (max-width: 869px) {
+  .appsTitle, .contactTitle, .playerTitle, .aboutTitle {
+      height: 40vh;
+  }
   .playerTitle {
     transform: translateY(50px);
   }
@@ -334,6 +345,9 @@ footer {
     a {
       font-size: 15px;
     }
+  }
+  .aboutSection img {
+    padding: 10px;
   }
 }
 @media (min-width: 576px) {
