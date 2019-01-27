@@ -83,3 +83,5 @@ function intervalHandler() {
 }
 
 intervalHandler();
+
+(adsbygoogle = window.adsbygoogle || []).push({});
