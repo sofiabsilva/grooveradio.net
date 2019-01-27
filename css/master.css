@@ -149,7 +149,7 @@ h1 {
 }
 
 .appsTitle {
-  background-image: url("../images/IMG_7785.jpg");
+  background-image: url("../images/850_IMG_7785.jpg");
   background-position: center;
   display: flex;
   align-items: center;
@@ -203,7 +203,7 @@ a img:hover {
 }
 
 .aboutTitle {
-  background-image: url(https://www.grooveradiopt.com/fotos/IMG_5270.jpg);
+  background-image: url("../images/850_IMG_5270.jpg");
   display: flex;
   background-position: center;
   align-items: center;
@@ -303,6 +303,14 @@ footer p {
 
   .contactTitle {
     background-image: url("../images/IMG_4049.jpg");
+  }
+
+  .appsTitle {
+    background-image: url("../images/IMG_7785.jpg");
+  }
+
+  .aboutTitle {
+    background-image: url("../images/IMG_5270.jpg");
   }
 }
 @media (max-width: 869px) {
