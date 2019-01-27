@@ -245,7 +245,7 @@ a img:hover {
 }
 
 .socialmedia {
-  font-size: 20px;
+  font-size: 25px;
   padding: 20px;
 }
 
@@ -354,6 +354,11 @@ footer p {
 
   .aboutSection img {
     padding: 10px;
+  }
+}
+@media (max-width: 374px) {
+  .second .col {
+    min-width: 100px;
   }
 }
 
