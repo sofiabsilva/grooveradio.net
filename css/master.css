@@ -209,13 +209,14 @@ a img:hover {
 
 .aboutSection {
   padding: 40px;
+  padding-top: 20px;
   font-size: 16px;
   text-align: center;
   max-width: 970px;
   margin: auto;
 }
 .aboutSection p {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 .aboutSection img {
   width: 600px;
@@ -236,6 +237,7 @@ a img:hover {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  padding-bottom: 20px;
 }
 .contactSection h2 {
   padding: 15px;
