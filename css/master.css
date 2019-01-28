@@ -108,11 +108,8 @@ h1 {
   padding: 10px 0;
 }
 
-.playerButton {
-  align-self: start;
-}
-
 .player {
+  align-self: start;
   visibility: hidden;
   padding: 5px;
   cursor: pointer;

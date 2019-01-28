@@ -10,7 +10,7 @@ window.onload = currentSongs;
 let audio = new Audio();
 
 function playAudio () {
-  audio.src = 'http://europa.shoutca.st:8648/;/;stream.mp3'
+  audio.src = 'http://europa.shoutca.st:8648/;'
   audio.play();
   console.log('playing');
 }
