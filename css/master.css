@@ -297,19 +297,22 @@ footer p {
 
   .playerTitle {
     background-image: url("../images/cut_IMG_7342.jpg");
-    transform: translateY(90px);
+    transform: translateY(1px);
   }
 
   .contactTitle {
     background-image: url("../images/IMG_4049.jpg");
+    transform: translateY(1px);
   }
 
   .appsTitle {
     background-image: url("../images/IMG_7785.jpg");
+    transform: translateY(1px);
   }
 
   .aboutTitle {
     background-image: url("../images/IMG_5270.jpg");
+    transform: translateY(1px);
   }
 }
 @media (max-width: 869px) {
