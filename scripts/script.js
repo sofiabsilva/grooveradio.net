@@ -11,9 +11,10 @@ let audio = new Audio();
 
 function playAudio () {
   audio.src = 'http://europa.shoutca.st:8648/;'
-  audio.play();
-  console.log('playing');
+  audio.load()
+  setTimeout(function() { audio.play() }, 0);
 }
+
 
 function stopAudio () {
   audio.pause()
