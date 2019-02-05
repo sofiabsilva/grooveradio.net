@@ -109,6 +109,7 @@ h1 {
 }
 
 .player {
+  box-sizing: content-box;
   align-self: flex-start;
   visibility: hidden;
   padding: 5px;
