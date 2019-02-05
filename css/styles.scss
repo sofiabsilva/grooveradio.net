@@ -110,7 +110,7 @@ h2 {
 }
 
 .player {
-  align-self: start;
+  align-self: flex-start;
   visibility: hidden;
   padding: 5px;
   cursor: pointer;
@@ -132,7 +132,7 @@ h2 {
   display: flex;
   @extend %sections;
   .loading {
-    align-self: start;
+    align-self: flex-start;
     padding-left: 20px;
   }
 }

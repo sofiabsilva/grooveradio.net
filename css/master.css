@@ -109,7 +109,7 @@ h1 {
 }
 
 .player {
-  align-self: start;
+  align-self: flex-start;
   visibility: hidden;
   padding: 5px;
   cursor: pointer;
@@ -129,7 +129,7 @@ h1 {
   display: flex;
 }
 #recentSongs .loading {
-  align-self: start;
+  align-self: flex-start;
   padding-left: 20px;
 }
 
