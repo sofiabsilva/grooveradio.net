@@ -75,6 +75,16 @@ h1 {
   padding: 0;
 }
 
+.share {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+.a2a_floating_style {
+  background-color: #1a1a1a;
+}
+
 .first {
   min-height: 60vh;
 }
@@ -209,7 +219,7 @@ a img:hover {
 }
 
 .aboutSection {
-  padding: 40px;
+  padding: 60px;
   padding-top: 20px;
   font-size: 16px;
   text-align: center;
@@ -317,6 +327,10 @@ footer p {
   }
 }
 @media (max-width: 869px) {
+  .share {
+    right: 0;
+  }
+
   .appsTitle, .contactTitle, .playerTitle, .aboutTitle {
     height: 40vh;
   }
@@ -370,6 +384,10 @@ footer p {
 @media (max-width: 374px) {
   .second .col {
     min-width: 100px;
+  }
+
+  .share {
+    display: none;
   }
 }
 

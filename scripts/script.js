@@ -96,4 +96,11 @@ function intervalHandler() {
 
 intervalHandler();
 
+// google ads
 (adsbygoogle = window.adsbygoogle || []).push({});
+
+// share buttons via https://www.addtoany.com/
+var a2a_config = a2a_config || {};
+a2a_config.thanks = {
+    postShare: true
+};
