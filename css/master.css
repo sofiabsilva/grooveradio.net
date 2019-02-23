@@ -30,7 +30,6 @@ body {
 
 .playerTitle {
   background-image: url("../images/850_bgimg.jpg");
-  background-image: url("../images/850_bgimg.webp");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,7 +158,6 @@ h1 {
 
 .appsTitle {
   background-image: url("../images/850_IMG_7785.jpg");
-  background-image: url("../images/850_IMG_7785.webp");
   background-position: center;
   display: flex;
   align-items: center;
@@ -214,7 +212,6 @@ a img:hover {
 
 .aboutTitle {
   background-image: url("../images/850_IMG_5270.jpg");
-  background-image: url("../images/850_IMG_5270.webp");
   display: flex;
   background-position: center;
   align-items: center;
@@ -240,7 +237,6 @@ a img:hover {
 
 .contactTitle {
   background-image: url("../images/850_IMG_4049.jpg");
-  background-image: url("../images/850_IMG_4049.webp");
   display: flex;
   background-position: center;
   align-items: center;
@@ -312,25 +308,21 @@ footer p {
 
   .playerTitle {
     background-image: url("../images/cut_IMG_7342.jpg");
-    background-image: url("../images/cut_IMG_7342.webp");
     transform: translateY(1px);
   }
 
   .contactTitle {
     background-image: url("../images/IMG_4049.jpg");
-    background-image: url("../images/IMG_4049.webp");
     transform: translateY(1px);
   }
 
   .appsTitle {
     background-image: url("../images/IMG_7785.jpg");
-    background-image: url("../images/IMG_7785.webp");
     transform: translateY(1px);
   }
 
   .aboutTitle {
     background-image: url("../images/IMG_5270.jpg");
-    background-image: url("../images/IMG_5270.webp");
     transform: translateY(1px);
   }
 }

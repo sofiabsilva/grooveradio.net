@@ -15,7 +15,6 @@ $background: #1a1a1a;
   flex-direction:column;
   padding: 6px;
 }
-
 %titles {
   color: white;
   letter-spacing: 4px;
@@ -23,7 +22,6 @@ $background: #1a1a1a;
   font-size: 2vw;
   font-weight: normal;
 }
-
 body {
   background: $background;
   color: white;
@@ -31,7 +29,7 @@ body {
 }
  .playerTitle {
    background-image: url("../images/850_bgimg.jpg");
-   background-image: url("../images/850_bgimg.webp");
+   // background-image: url("../images/850_bgimg.webp");
    @extend %bgImages;
    display: flex;
    align-items: center;
@@ -45,18 +43,15 @@ h1 {
   background: #fdcb00ba;
   letter-spacing: 9px;
 }
-
 .logo {
   max-width: 80px;
 }
-
 .navbar {
   padding: 0 15px;
   background-color: $navColor;
   text-transform: uppercase;
   border-bottom: solid 1px #000;
 }
-
 .navbar-dark .navbar-nav .nav-link {
   color: $linkColor;
 }
@@ -164,7 +159,7 @@ h2 {
 // apps section
 .appsTitle {
    background-image: url("../images/850_IMG_7785.jpg");
-   background-image: url("../images/850_IMG_7785.webp");
+   // background-image: url("../images/850_IMG_7785.webp");
    @extend %bgImages;
    background-position: center;
    display: flex;
@@ -218,7 +213,7 @@ a img:hover {
 // About section
 .aboutTitle {
   background-image: url("../images/850_IMG_5270.jpg");
-  background-image: url("../images/850_IMG_5270.webp");
+  // background-image: url("../images/850_IMG_5270.webp");
   @extend %bgImages;
   display: flex;
   background-position: center;
@@ -245,7 +240,7 @@ a img:hover {
 // Contact section
 .contactTitle {
   background-image: url("../images/850_IMG_4049.jpg");
-  background-image: url("../images/850_IMG_4049.webp");
+  // background-image: url("../images/850_IMG_4049.webp");
   @extend %bgImages;
   display: flex;
   background-position: center;
@@ -316,22 +311,22 @@ footer {
   }
   .playerTitle {
     background-image: url("../images/cut_IMG_7342.jpg");
-    background-image: url("../images/cut_IMG_7342.webp");
+    // background-image: url("../images/cut_IMG_7342.webp");
     transform: translateY(1px);
   }
   .contactTitle {
     background-image: url("../images/IMG_4049.jpg");
-    background-image: url("../images/IMG_4049.webp");
+    // background-image: url("../images/IMG_4049.webp");
     transform: translateY(1px);
   }
   .appsTitle {
     background-image: url("../images/IMG_7785.jpg");
-    background-image: url("../images/IMG_7785.webp");
+    // background-image: url("../images/IMG_7785.webp");
     transform: translateY(1px);
   }
   .aboutTitle {
     background-image: url("../images/IMG_5270.jpg");
-    background-image: url("../images/IMG_5270.webp");
+    // background-image: url("../images/IMG_5270.webp");
     transform: translateY(1px);
   }
 }
