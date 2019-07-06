@@ -1,9 +1,9 @@
-.contactSection, .second, .first {
-  padding: 40px 10vw;
+.contactSection, .second {
+  padding: 60px 10vw;
 }
 
 .contactTitle, .aboutTitle, .appsTitle, .playerTitle {
-  height: 55vh;
+  height: 58vh;
   max-width: 100%;
   background-size: cover;
   background-attachment: unset;
@@ -20,6 +20,10 @@ h2 {
   text-transform: lowercase;
   font-size: 2vw;
   font-weight: normal;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -86,6 +90,7 @@ h1 {
 }
 
 .first {
+  padding: 0 10vw 40px 10vw;
   min-height: 60vh;
 }
 
@@ -168,7 +173,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
 }
 .moreSection button {
   align-self: center;
@@ -220,7 +225,6 @@ a img:hover {
 
 .aboutSection {
   padding: 60px;
-  padding-top: 20px;
   font-size: 16px;
   text-align: center;
   max-width: 970px;
@@ -248,7 +252,6 @@ a img:hover {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding-bottom: 20px;
 }
 .contactSection h2 {
   padding: 15px;
@@ -327,6 +330,10 @@ footer p {
   }
 }
 @media (max-width: 869px) {
+  .first {
+    padding-top: 60px;
+  }
+
   .share {
     right: 0;
   }
